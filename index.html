@@ -1,110 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="./scripts/script.js"></script>
   <title>HackEEE</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary " style="--bs-bg-opacity: .5" id="mainnav">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">HACK EEE</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Volunteer</a>
+<body onload="autoType()">
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24"
+          class="d-inline-block align-text-top">
+        HackEEE
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Register</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-           
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content Section -->
+  <div class="content">
+    <div class="container-fluid" id="section1">
+      <h1>Join HackEEE</h1>
+      <div class="row text-center">
+        <div class="col col-dm-6" id="auto_type_div">
+          Mark your calendars for the exciting Hackthon coming your way <br><br><br>
+          <div class="content_inner">
+            <div class="btn" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-primary btn-lg">Register</button>
+            </div>
+            <button type="button" class="btn btn-primary btn-lg">Volenter</button>
           </div>
         </div>
-      </nav>
-    <div id="main">  
-        <div id="page" class="container-fluid">  
-          <canvas></canvas>    
-                <h1 class="p-3 mb-2 bg-light text-body  rounded-4" style="--bs-bg-opacity: .5;">Welcome to
-                    <br>
-                    HACKEEE</h1>
-                <p>Explore, Innovate, Hack!</p>  
-                
+        <div class="col col-md-6">
+          <div class="grid_prize">
+            <div></div>
+            <div>S</div>
+            <div>M</div>
+            <div>T</div>
+            <div>W</div>
+            <div>T</div>
+            <div>F</div>
+            <div>S</div>
+            <div>15</div>
+            <div>16</div>
+            <div>17</div>
+            <div>18</div>
+            <div>19</div>
+            <div class="highlight_v_close">20</div>
+            <div>21</div>
+            <div>22</div>
+            <div>23</div>
+            <div>24</div>
+            <div>25</div>
+            <div>26</div>
+            <div>27</div>
+            <div>28</div>
+            <div>29</div>
+            <div>30</div>
+            <div>31</div>
+            <div>01</div>
+            <div>02</div>
+            <div>03</div>
+            <div>04</div>
+            <div>05</div>
+            <div>06</div>
+            <div>07</div>
+            <div>08</div>
+            <div>09</div>
+            <div class="highlight_r_close">10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+            <div>16</div>
+            <div>17</div>
+            <div class="highlight_f_date_2">18</div>
+            <div class="highlight_f_date_1">19</div>
+            <div>20</div>
+            <div>21</div>
+            <div>22</div>
+            <div>23</div>
+            <div>24</div>
+            <div class="month_1">OCTOBER</div>
+            <div class="month_2">NOVEMBER</div>
+            <div>25</div>
+            <div>26</div>
+            <div>27</div>
+            <div>28</div>
+            <div>29</div>
+            <div>30</div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div id="page1" class="container-fluid">
-      <h1 class="center">About</h1>
-      
-      <p style="color: white;" class="center">HackEEE, a unique platform where participants can delve into the fascinating realms of
-        technology and engineering. Whether you're passionate about unraveling the mysteries of existing products or
-        envisioning the future of a Smart University, this hackathon is the perfect opportunity to bring your ideas to
-        life.</p>
+
+    <div class="container-fluid" id="section1">
+      <h1>What is HackEEE</h1>
+      <p>
+        A 24 hour hackathon, from the EEE Vertical. We calls for coders, tech evangelists,
+        creatives, and developers from all disciplines to take a part to win awesome prizes and collaborate with other
+        developers. We are determined to have an all-inclusive and diverse group of students attending.
+      </p>
     </div>
-    <div id="page2" class="container-fluid">
-      <h1 class="center">
-        Pick your Theme
-      </h1>
-      <br/>
-          <h3>Reverse Engineering <br/><br/>
-            Wonder how things work behind the scenes? This is your ticket to prove your reverse Engineering Skills.
-          </h3>
-          <h3>Circuit Debugging: <br/> <br/>Circuit here, Circuit there, Circuit everywhere, circuit debug here?<br/></h3>
-          <h3>Smart University: <br/> <br/>Transform & Innovate to enchance learning Experience </h3>
+
+    <div class="container-fluid" id="section1">
+      <h1>Prize Selection</h1>
+      <div class="container">
+        <div>First Place</div>
+        <div>Second Place</div>
+        <div>Third Place</div>
+        <div></div>
+        <div>asdf</div>
+        <div>asdf</div>
+        <div>asdf</div>
+        <div>asdf</div>
+        <div>asdf</div>
+        <div>asdf</div>
+        <div>asdf</div>
+        <div>asdf</div>
+        <div>asdf</div>
+        <div>asdf</div>
+        <div>asdf</div>
+        <div>asdf</div>
+        <div>asdf</div>
+        <div>asdf</div>
+        <div>asdf</div>
+        <div>asdf</div>
+        <div>asdf</div>
+      </div>
     </div>
-    <div id="page3" class="container-fluid">
-      <h1>
-        Register Now!!!
-      </h1>
-      <p id="counter"></p>
 
+    <div class="container-fluid" id="section1">
+      <h1>Connect Easy</h1>
+      <p>
+        Experience Hassle-free connections to the internet, every time. <br />
+        No more struggling with the Internet Captive Portal.
+      </p>
     </div>
-    <script>
-      // Set the date we're counting down to
-      var countDownDate = new Date("Oct 10, 2023 15:37:25").getTime();
 
-      // Update the count down every 1 second
-      var x = setInterval(function () {
-
-        // Get today's date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        document.getElementById("counter").innerHTML = days + "d " + hours + "h "
-          + minutes + "m " + seconds + "s ";
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("counter").innerHTML = "EXPIRED";
-        }
-      }, 1000);
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
-      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script src="script.js"></script>
+    <div class="container-fluid" id="section1">
+      <h1>Connect Easy</h1>
+      <p>
+        Experience Hassle-free connections to the internet, every time. <br />
+        No more struggling with the Internet Captive Portal.
+      </p>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
