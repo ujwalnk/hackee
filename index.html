@@ -18,7 +18,7 @@
   <nav class="navbar navbar-expand-lg bg-dark fixed-top py-0">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-         <img src="logo.jpg" alt="Logo" width="40" height="40" class="logo">
+        <img src="logo.jpg" alt="Logo" width="40" height="40" class="logo d-inline-block align-text-top"> 
         HackEEE
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -28,26 +28,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link active" aria-current="page" href="#page_home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+            <a class="nav-link" href="#page_team">Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+            <a class="nav-link" href="#page_prize">Prizes</a>
           </li>
         </ul>
       </div>
@@ -56,24 +43,22 @@
 
   <!-- Content Section -->
   <div class="content">
-    <div class="container-fluid" id="home">
-      <div class="row">
-        <div class="col">
-          <h1>Join HackEEE</h1>
-          <div class="col col-dm-6">
-            <p id="auto_type_div">
+    <div class="container-fluid" id="page_home">
+      <h1>Join HackEEE</h1>
+      <div class="row text-center">
+        <div class="col col-dm-6">
+          <p id="auto_type_div">
             Mark your calendars for the exciting Hackthon coming your way <br><br><br>
-            </p>
-            <div class="content_inner">
-              <div class="btn" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-primary btn-lg">Register</button>
-              </div>
-              <button type="button" class="btn btn-primary btn-lg">Volenter</button>
+          </p>
+          <div class="content_inner">
+            <div class="btn" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-primary btn-lg">Register</button>
             </div>
+            <button type="button" class="btn btn-primary btn-lg">Volunteer</button>
           </div>
         </div>
-        
         <div class="col col-md-6">
+          <p style="color: rgba(255, 255, 255, 0.397); font-size: small;">(Click on the dots)</p>
           <div class="grid_prize">
             <div></div>
             <div>S</div>
@@ -88,7 +73,7 @@
             <div>17</div>
             <div>18</div>
             <div>19</div>
-            <div class="highlight_v_close">20</div>
+            <div class="highlight_v_close" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Last date to register as a volunteer">20</div>
             <div>21</div>
             <div>22</div>
             <div>23</div>
@@ -109,7 +94,7 @@
             <div>07</div>
             <div>08</div>
             <div>09</div>
-            <div class="highlight_r_close">10</div>
+            <div class="highlight_r_close" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Last day to register as participant">10</div>
             <div>11</div>
             <div>12</div>
             <div>13</div>
@@ -117,8 +102,8 @@
             <div>15</div>
             <div>16</div>
             <div>17</div>
-            <div class="highlight_f_date_2">18</div>
-            <div class="highlight_f_date_1">19</div>
+            <div class="highlight_f_date_2" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Hackathon Day 01">18</div>
+            <div class="highlight_f_date_1" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Hackathon Day 02">19</div>
             <div>20</div>
             <div>21</div>
             <div>22</div>
@@ -136,11 +121,6 @@
             <div></div>
             <div></div>
           </div>
-      </div>
-      
-      <div class="row text-center">
-       
-        
         </div>
       </div>
     </div>
@@ -154,7 +134,7 @@
       </p>
     </div>
 
-    <div class="container-fluid" id="section1">
+    <div class="container-fluid" id="page_prize">
       <h1>Prize Selection</h1>
       <div class="container">
         <div>First Place</div>
@@ -181,17 +161,30 @@
       </div>
     </div>
 
-    <div class="container-fluid" id="section1">
-      <h1>Connect Easy</h1>
-      <p>
-        Experience Hassle-free connections to the internet, every time. <br />
-        No more struggling with the Internet Captive Portal.
-      </p>
+    <div class="container-fluid" id="page_team">
+      <h1>Meet Our Team</h1>
+      <div class="grid_team">
+        <div class="tech_head_1_desc">(Sankarshan Pic)</div>
+        <div class="tech_head_1_pic">
+          Sankarshan <br>
+          Technical Head
+        </div>
+        <div class="tech_head_2_pic">(Ujwal Pic)</div>
+        <div class="tech_head_2_desc">Ujwal N K <br>Technical Head</div>
+        <div class="content_head_pic">(Abhinav Pic)</div>
+        <div class="content_head_desc">Abhinav<br>Content Head</div>
+        <div class="hospitality_head_pic">(Pranav V Kumar Pic)</div>
+        <div class="hospitality_head_desc">Pranav V Kumar <br> Hospitality Head</div>
+        <div class="overseer_pic">(Sanath Pic)</div>
+        <div class="overseer_desc">Sanath</div>
+      </div>
     </div>
 
     <div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#f3f4f5" fill-opacity="0.6" d="M0,96L24,117.3C48,139,96,181,144,170.7C192,160,240,96,288,90.7C336,85,384,139,432,144C480,149,528,107,576,80C624,53,672,43,720,48C768,53,816,75,864,101.3C912,128,960,160,1008,197.3C1056,235,1104,277,1152,261.3C1200,245,1248,171,1296,154.7C1344,139,1392,181,1416,202.7L1440,224L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path>
+        <path fill="#f3f4f5" fill-opacity="0.6"
+          d="M0,96L24,117.3C48,139,96,181,144,170.7C192,160,240,96,288,90.7C336,85,384,139,432,144C480,149,528,107,576,80C624,53,672,43,720,48C768,53,816,75,864,101.3C912,128,960,160,1008,197.3C1056,235,1104,277,1152,261.3C1200,245,1248,171,1296,154.7C1344,139,1392,181,1416,202.7L1440,224L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z">
+        </path>
       </svg>
     </div>
   </div>
@@ -199,10 +192,11 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
-    <!-- Auto Type -->
-    <script>
-      
-    </script>
+  <!-- Auto Type -->
+  <script>
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+  </script>
 </body>
 
 </html>
