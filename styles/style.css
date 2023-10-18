@@ -88,6 +88,7 @@ body {
         "month_2 . . . . . . ."
         "month_2 . . . . . . ."
         "month_2 . . . . . . .";
+        padding-bottom: 50%;
 }
 
 .month_1 {
@@ -162,7 +163,10 @@ body {
     display: inline-block;
     animation: blink 0.5s linear infinite alternate;
 }
-
+.logo
+{
+    background-color: white;
+}
 @keyframes blink {
     50% {
         opacity: 0;
