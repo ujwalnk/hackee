@@ -167,6 +167,7 @@ body {
 {
     background-color: white;
 }
+
 @keyframes blink {
     50% {
         opacity: 0;
