@@ -26,7 +26,7 @@ function autoType() {
     intervalID = setInterval(autoType, 100);
     flagSentenceComplete = false;
   }
-  console.log("Reading", typeText[choosenText][choosenLetter], choosenLetter, choosenText);
+  // console.log("Reading", typeText[choosenText][choosenLetter], choosenLetter, choosenText);
   document.getElementById("auto_type_div").innerHTML += typeText[choosenText][choosenLetter];
   choosenLetter++;
   if (choosenLetter == typeText[choosenText].length - 1) {

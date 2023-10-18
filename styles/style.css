@@ -113,37 +113,43 @@ body {
 
 /* Highlights for calendar */
 .highlight_f_date_1 {
-    background-color: brown;
-    border-radius: 50%;
-    border-bottom-left-radius: 0%;
-    border-top-left-radius: 0%;
-    width: 120%;
-    height: 100%;
+    background-image: url("../res/blob_1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    z-index: 10;
+    padding: 10px;
+    margin: -10px;
 }
 
 .highlight_f_date_2 {
-    background-color: brown;
-    border-radius: 50%;
-    border-bottom-right-radius: 0%;
-    border-top-right-radius: 0%;
-    width: 120%;
-    height: 100%;
+    background-image: url("../res/blob_1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    z-index: 10;
+    padding: 10px;
+    margin: -10px;
 }
 
 .highlight_v_close {
-    /* background-color: blueviolet; */
-    background: blueviolet no-repeat center;
+    background-image: url("../res/blob_2.svg");
+    background-repeat: no-repeat;
     background-position: center;
-    border-radius: 50%;
-    width: 120%;
-    height: 80%;
+    background-size: 100%;
+    z-index: 10;
+    padding: 10px;
+    margin: -10px;
 }
 
 .highlight_r_close {
-    background-color: cadetblue;
-    border-radius: 50%;
-    width: 120%;
-    height: 100%;
+    background-image: url("../res/blob_2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    z-index: 10;
+    padding: 10px;
+    margin: -10px;
 }
 
 /* Auto type fake cursor */
