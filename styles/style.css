@@ -178,3 +178,58 @@ body {
         opacity: 1;
     }
 }
+
+/* Team Grid */
+.grid_team {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". tech_head_1_pic . tech_head_2_pic ."
+        ". tech_head_1_desc . tech_head_2_desc ."
+        ". . . . ."
+        "content_head_pic . hospitality_head_pic . overseer_pic"
+        "content_head_desc . hospitality_head_desc . overseer_desc";
+}
+
+.tech_head_1_desc {
+    grid-area: tech_head_1_desc;
+}
+
+.tech_head_1_pic {
+    grid-area: tech_head_1_pic;
+}
+
+.tech_head_2_pic {
+    grid-area: tech_head_2_pic;
+}
+
+.tech_head_2_desc {
+    grid-area: tech_head_2_desc;
+}
+
+.content_head_pic {
+    grid-area: content_head_pic;
+}
+
+.content_head_desc {
+    grid-area: content_head_desc;
+}
+
+.hospitality_head_pic {
+    grid-area: hospitality_head_pic;
+}
+
+.hospitality_head_desc {
+    grid-area: hospitality_head_desc;
+}
+
+.overseer_pic {
+    grid-area: overseer_pic;
+}
+
+.overseer_desc {
+    grid-area: overseer_desc;
+}
