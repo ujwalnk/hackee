@@ -1,0 +1,41 @@
+#main {
+    position: relative;
+    overflow: hidden;
+}
+
+body{
+    color: white !important;
+}
+
+/*Page css selector*/
+div[id^='page'] {
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.20);
+}
+
+/*Align text on even pages to left*/
+main:nth-child(2n){
+    text-align: left;
+}
+
+/*Align text on even pages to left*/
+main:nth-child(2n+1){
+    text-align: right;
+}
+
+canvas {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#mainnav {
+    z-index: 100;
+    background-color: transparent;
+    backdrop-filter: 15px;
+}
+.center{
+    padding:5%
+}
