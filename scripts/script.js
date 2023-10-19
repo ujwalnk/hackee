@@ -2,7 +2,10 @@
 var typeText = [
   " Mark your Calendars for the event ",
   " 24 hours filled with excitement ",
-  " Win awesome prizes "
+  " Win awesome prizes ",
+  " Be part of a network of brilliant minds, exchanging ideas, inspiring one another, and co-creating the future ",
+  " Explore dedicated spaces where like-minded innovators unite ",
+  " Turn your ideas into reality through hands-on prototyping "
 ]
 
 var choosenText = 0;
@@ -58,8 +61,7 @@ var x = setInterval(function () {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  document.getElementById("counter").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
+ document.getElementById("counter").innerHTML=days+" d"+" "+hours+" h"+" "+minutes+" m "+seconds+" s";
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("counter").innerHTML = "EXPIRED";
