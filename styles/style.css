@@ -240,3 +240,7 @@ body {
 .overseer_desc {
     grid-area: overseer_desc;
 }
+#counter
+{
+    color: white;;
+}
