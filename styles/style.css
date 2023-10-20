@@ -187,82 +187,20 @@ body {
 
 
 /* Team Grid */
-.grid_team {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        ". tech_head_1_pic . tech_head_2_pic ."
-        ". tech_head_1_desc . tech_head_2_desc ."
-        ". . . . ."
-        "content_head_pic . hospitality_head_pic . overseer_pic"
-        "content_head_desc . hospitality_head_desc . overseer_desc";
-}
 
-.tech_head_1_desc {
-    grid-area: tech_head_1_desc;
-}
-
-.tech_head_1_pic {
-    grid-area: tech_head_1_pic;
-}
-
-.tech_head_2_pic {
-    grid-area: tech_head_2_pic;
-}
-
-.tech_head_2_desc {
-    grid-area: tech_head_2_desc;
-}
-
-.content_head_pic {
-    grid-area: content_head_pic;
-}
-
-.content_head_desc {
-    grid-area: content_head_desc;
-}
-
-.hospitality_head_pic {
-    grid-area: hospitality_head_pic;
-}
-
-.hospitality_head_desc {
-    grid-area: hospitality_head_desc;
-}
-
-.overseer_pic {
-    grid-area: overseer_pic;
-}
-
-.overseer_desc {
-    grid-area: overseer_desc;
-}
-#h
-{
-    width:40%;
-    height:40%;
-    margin:3%;
-    background-color: white;
-    color: black;
-}
-.size
-{
-    height:90%;
-    width:80%;
-    margin-bottom: 5%;
+.size{
     text-align: center;
+    transition: 300ms;
+    
 }
-.size1
-{
-    height:90%;
-    width: 50%;
-    padding: 0%;
-    margin-bottom: 5%;
-}
+
 .col{
     margin-right: 5%;
     margin-bottom: 10%;
+}
+
+.size:hover{
+    height: 25%;
+    width: auto;
+    transition: 300ms;
 }
