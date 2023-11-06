@@ -18,40 +18,19 @@ var flagSentenceComplete = false;
 var intervalID = setInterval(autoType, 100);
 
 function autoType() {
-  // Clear text if fully printed
-  if (flagSentenceComplete) {
-    console.log(maxLetters);
-    flagSentenceComplete = false;
-  }
-  if ((choosenLetter == 0)) {
-    clearInterval(intervalID);
-    intervalID = setInterval(autoType, 2000);
-    flagSentenceComplete = true;
-  } else {
-    clearInterval(intervalID);
-    document.getElementById("auto_type_div").innerHTML = "";
-    intervalID = setInterval(autoType, 100);
-    flagSentenceComplete = false;
-  }
-  // console.log("Reading", typeText[choosenText][choosenLetter], choosenLetter, choosenText);
-  for (let x = 0; x <= choosenLetter; x++) {
-    document.getElementById("auto_type_div").innerHTML += typeText[choosenText][x];
-  }
-  // let emptyString = "";
-  document.getElementById("auto_type_div").innerHTML += " ";
-
-  for (let x = 0; x < maxLetters - choosenLetter - 2; x++) {
-    document.getElementById("auto_type_div").innerHTML += "⠀";
-  }
-  choosenLetter++;
-  if (choosenLetter == typeText[choosenText].length - 1) {
-    choosenText++;
-    choosenLetter = 0;
-  }
-  if (choosenText == typeText.length) {
-    choosenText = 0;
-  }
-} flagSentenceComplete ? 1000 : 100
+  document.getElementById("auto_type_div").innerHTML = typeText[0];
+  
+  // // Set the choosenLetter & choosenText
+  // if(choosenLetter < typeText[choosenText]){
+  //   choosenLetter ++;
+  // } else{
+  //   choosenLetter = 0;
+  //   choosenText ++;
+  //   if(choosenText < typeText.length){
+  //     choosenText = 0;
+  //   }
+  // }
+}
 
 // Sleep Function
 function sleep(ms) {
