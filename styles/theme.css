@@ -1038,3 +1038,10 @@ t{
   /* color: transparent; */
   color: white;
 }
+
+.profile_image{
+  height: 100% !important; 
+  width: auto; 
+  /* object-fit: cover; */
+  object-fit: scale-down;
+}
