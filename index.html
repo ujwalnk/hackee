@@ -72,7 +72,7 @@
             <div class="row m-auto align-left">
                 <div class="col-lg-6 m-auto content">
                     <div class="title col-md-12 align-left col-lg-">
-                        <h3 class="mbr-section-title mbr-fonts-style align-left mb-4 display-1">HackEEE</h3>
+                        <h3 class="mbr-section-title mbr-fonts-style align-left mb-4 display-1" style="text-shadow: grey;">HackEEE</h3>
 
                         <div class="mbr-section-btn align-left"><a class="btn btn-primary-outline display-5"
                                 href="https://forms.google.com/404">Participate</a></div>
@@ -83,7 +83,61 @@
                     <div class="row">
                         <div class="col-12 align-left">
                             <div class="iconfont-wrapper">
-                                <span class="mbr-iconfont mobi-mbri-code mobi-mbri"></span>
+                                <!-- <span class="mbr-iconfont mobi-mbri-code mobi-mbri"> -->
+                                    <div class="calendar-container">
+                                        <div class="month-name">November</div>
+                                        <div>S</div>
+                                        <div>M</div>
+                                        <div>T</div>
+                                        <div>W</div>
+                                        <div>T</div>
+                                        <div>F</div>
+                                        <div>S</div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div>1</div>
+                                        <div>2</div>
+                                        <div>3</div>
+                                        <div>4</div>
+                                        <div>5</div>
+                                        <div>6</div>
+                                        <div>7</div>
+                                        <div>8</div>
+                                        <div>9</div>
+                                        <div>10</div>
+                                        <div>11</div>
+                                        <div>12</div>
+                                        <div>13</div>
+                                        <div>14</div>
+                                        <div>15</div>
+                                        <div>16</div>
+                                        <div>17</div>
+                                        <div>18</div>
+                                        <div>19</div>
+                                        <div>20</div>
+                                        <div>21</div>
+                                        <div>22</div>
+                                        <div>23</div>
+                                        <div>24</div>
+                                        <div>25</div>
+                                        <div>26</div>
+                                        <div>27</div>
+                                        <div>28</div>
+                                        <div>29</div>
+                                        <div>30</div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                      </div>
+                                <!-- </span> -->
                             </div>
 
                         </div>
@@ -207,7 +261,7 @@
                         </p>
 
                     </div>
-                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div id="carouselPreviousYearsPhotos" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="https://placehold.co/928x525" class="d-block w-100" alt="...">
@@ -225,12 +279,12 @@
                                 <img src="https://placehold.co/928x525" class="d-block w-100" alt="...">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPreviousYearsPhotos"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselPreviousYearsPhotos"
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
@@ -585,7 +639,6 @@
     </section>
 
 
-
     <script src="scripts/bootstrap.bundle.min.js"></script>
     <script src="scripts/smooth-scroll.js"></script>
     <script src="scripts/index.js"></script>
@@ -597,7 +650,18 @@
     <!-- AutoType -->
     <script src="scripts/script.js"></script>
 
+    <!-- Add Bootstrap CSS and JS links -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 
+
+
+    <script>
+        $(document).ready(function() {
+            $('#carouselExampleAutoplaying').carousel();
+        });
+    </script>
 
 </body>
 
