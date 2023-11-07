@@ -1,0 +1,12 @@
+#auto_type_div::after {
+    content: '|'; /* Add the cursor as a pseudo-element */
+    animation: cursorBlink 0.7s infinite; /* Blink the cursor */
+}
+@keyframes cursorBlink {
+    0%, 50%, 100% {
+      opacity: 0;
+    }
+    25%, 75% {
+      opacity: 1;
+    }
+  }
