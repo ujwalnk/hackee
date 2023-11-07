@@ -1,36 +1,44 @@
-// Dirty fix, add space before and after all text
-// Dirty fix, the largest text must be the first
-var typeText = [
-  " Be part of a network of brilliant minds, exchanging ideas, inspiring one another, and co-creating the future ",
-  " Mark your Calendars for the event ",
-  " 24 hours filled with excitement ",
-  " Win awesome prizes ",
-  " Explore dedicated spaces where like-minded innovators unite ",
-  " Turn your ideas into reality through hands-on prototyping "
-]
+let h1 = document.querySelector("#auto_type_div");
+let typeText = [
+  "Be part of a network of brilliant minds, exchanging ideas, inspiring one another, and co-creating the future ",
+  "Mark your Calendars for the event ",
+  "24 hours filled with excitement ",
+  "Win awesome prizes ",
+  "Explore dedicated spaces where like-minded innovators unite ",
+  "Turn your ideas into reality through hands-on prototyping "
+];
+let i = 0;
+let j = 0;
+let done = 1;
+let speed = 50;
 
-var choosenText = 0;
-var choosenLetter = 0;
-
-var maxLetters = typeText[0].length;
-
-var flagSentenceComplete = false;
-var intervalID = setInterval(autoType, 100);
-
-function autoType() {
-  document.getElementById("auto_type_div").innerHTML = typeText[0];
-  
-  // // Set the choosenLetter & choosenText
-  // if(choosenLetter < typeText[choosenText]){
-  //   choosenLetter ++;
-  // } else{
-  //   choosenLetter = 0;
-  //   choosenText ++;
-  //   if(choosenText < typeText.length){
-  //     choosenText = 0;
-  //   }
-  // }
+// Function to reset and repeat the typing animation
+function resetAndRepeat() {
+  j = 0;
+  i = 0;
+  done = 1;
+  autoType();
 }
+
+let autoType = () => {
+  if (j < typeText.length) {
+    if (i <= typeText[j].length) {
+      h1.innerText = typeText[j].slice(0, i);
+      i++;
+      done = 1;
+      setTimeout(autoType, speed);
+    } else {
+      i = 0;
+      j++;
+      setTimeout(autoType, 1000); // Wait for 1 second before typing the next message
+    }
+  } else {
+    // Typing of all messages is complete, so reset and repeat
+    setTimeout(resetAndRepeat, 1000); // Wait for 1 second before repeating
+  }
+}
+
+autoType();
 
 // Sleep Function
 function sleep(ms) {
