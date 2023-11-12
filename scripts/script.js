@@ -47,7 +47,8 @@ function sleep(ms) {
 // Set the date we're counting down to
 var countDownDate = new Date("NOV 20, 2023 15:37:25").getTime();
 
-// Update the count down every 1 second
+// Update the count down every 1 second if windows size accomodates it
+if(window.innerWidth > 600){
 var x = setInterval(function () {
 
   // Get today's date and time
@@ -68,3 +69,6 @@ var x = setInterval(function () {
     document.getElementById("counter").innerHTML = days + (days > 1 ? " days <br/>" : " day <br/>") + " " + hours + (hours > 1 ? " hours <br/>" : " hour <br/>") + " " + minutes + (minutes > 1 ? " minutes <br/>" : " minute <br/>") + seconds + (seconds > 1 ? " seconds <br/>" : " second <br/>");
   }
 }, 1000);
+} else { 
+  document.querySelector(".time-name").innerHTML = "";
+}
