@@ -45,7 +45,7 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 // Set the date we're counting down to
-var countDownDate = new Date("NOV 20, 2023 15:37:25").getTime();
+var countDownDate = new Date("NOV 18, 2023 9:00:00").getTime();
 
 // Update the count down every 1 second if windows size accomodates it
 if(window.innerWidth > 600){
@@ -59,8 +59,9 @@ var x = setInterval(function () {
 
 
   if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("counter").innerHTML = "EXPIRED";
+    // clearInterval(x);
+    // document.getElementById("counter").innerHTML = "EXPIRED";
+
   } else {
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
