@@ -1050,57 +1050,16 @@ t {
 
 /* Calendar CSS  */
 .calendar-container {
-  display: grid;
-  grid-template-columns: repeat(7, max-content) 1fr max-content;
-  grid-template-rows: max-content repeat(5, 1fr);
-  gap: 20px 20px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "month-name month-name month-name month-name month-name month-name month-name break time-name"
-    ". . . . . . . break time"
-    ". . . . . . . break time"
-    ". . . . . . . break time"
-    ". . . . . . . break time"
-    ". . . . . . . break time"
-    ". . . . . . . break time";
-
-  width: min-content;
+  width: max-content !important;
   height: min-content;
   border-radius: 8px;
   padding: 5%;
   margin-bottom: 10%;
   background-color: rgba(255, 255, 255, 0.205);
-}
-
-/* 41 */
-.month-name {
-  grid-area: month-name;
-  text-align: center;
-}
-
-.grid-highlight {
-  background-image: url("../res/blob_2.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  z-index: 10;
-  padding: 10px;
-  margin: -10px;
-  color: red
-}
-
-.calendar-container * {
-  font-family: monospace;
-  font-size: x-large;
-  text-align: center;
   color: white;
 }
 
-.time {
-  grid-area: time;
-  text-align: right;
-}
-
-.break {
-  grid-area: break;
+#calendar-id{
+  font-size: 3em;
+  width:30%;
 }

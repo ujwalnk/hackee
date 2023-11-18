@@ -45,7 +45,7 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 // Set the date we're counting down to
-var countDownDate = new Date("NOV 18, 2023 9:00:00").getTime();
+var countDownDate = new Date("NOV 19, 2023 10:20:00").getTime();
 
 // Update the count down every 1 second if windows size accomodates it
 if(window.innerWidth > 600){
@@ -61,13 +61,12 @@ var x = setInterval(function () {
   if (distance < 0) {
     // clearInterval(x);
     // document.getElementById("counter").innerHTML = "EXPIRED";
-
   } else {
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var hours = Math.floor(Math.abs(distance)/36e5);
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    document.getElementById("counter").innerHTML = days + (days > 1 ? " days <br/>" : " day <br/>") + " " + hours + (hours > 1 ? " hours <br/>" : " hour <br/>") + " " + minutes + (minutes > 1 ? " minutes <br/>" : " minute <br/>") + seconds + (seconds > 1 ? " seconds <br/>" : " second <br/>");
+    document.querySelector(".calendar-container").innerHTML = hours + ": " + minutes + ": " + seconds;
+     console.log(distance, hours, minutes, seconds)
   }
 }, 1000);
 } else { 
